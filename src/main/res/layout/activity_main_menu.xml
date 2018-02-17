@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hashshura.kraepelinpaulitest.MainMenu"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kraepelin and Pauli Test"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© github.com/hashshura (2018)"
+            android:textSize="16sp"
+            android:layout_marginBottom="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How should I call you?"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="John Smith"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_marginBottom="80dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time limit in seconds: "
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/timeLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:hint="30"/>
+
+        </LinearLayout>
+
+        <Button
+            android:onClick="beginTest"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Begin"
+            android:textSize="20sp"/>
+
+        <Button
+            android:onClick="highscore"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="HIGHSCORE (30 seconds)"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
